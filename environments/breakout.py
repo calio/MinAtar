@@ -97,7 +97,7 @@ class Env:
 
     # Query the current level of the difficulty ramp, difficulty does not ramp in this game, so return None
     def difficulty_ramp(self):
-        return None  
+        return None
 
     # Process the game-state into the 10x10xn state provided to the agent and return
     def state(self):
