@@ -112,7 +112,9 @@ class Env:
     def reset(self):
         self.ball_y = 3
         ball_start = self.random.choice(2)
-        self.ball_x, self.ball_dir = [(0,2),(9,3)][ball_start]
+        #self.ball_x, self.ball_dir = [(0,2),(9,3)][ball_start]
+        self.ball_x = self.random.choice(9)
+        self.ball_dir = [2, 3][self.random.choice(2)]
         self.pos = 4
         self.brick_map = np.zeros((10,10))
         self.brick_map[1:4,:] = 1
